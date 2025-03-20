@@ -86,6 +86,38 @@ header {
     cursor: pointer;
 }
 
+.login-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 400px;
+}
+
+.description {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.google-login {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.guest-link {
+    color: #A1A1A1;
+    text-decoration: underline;
+    font-size: 18px;
+}
+
 .content {
     padding: 20px;
     text-align: left;
@@ -140,7 +172,7 @@ button#createPost {
 }
 
 a {
-    color: #006EFE;
+    color: white;
     text-decoration: underline;
 }
 
