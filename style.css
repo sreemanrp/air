@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Lekton:ital,wght@0,400;0,700;1,400&family=Quicksand:wght@300..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    font-weight: 100;
+    font-style: normal;
+    text-align: left;
+}
+
+header {
+    font-family: "Lekton", monospace;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: black;
+}
+
+.header-left {
+    font-size: 24px;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.header-right img {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+}
+
+.content {
+    padding: 20px;
+    text-align: left;
+}
+
+.content p {
+    font-family: "Lekton", monospace;
+}
+
+.content h2 {
+    font-size: 20px;
+    font-weight: 300;
+    font-style: normal;
+    margin-top: 20px;
+}
+
+.tags {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+
+.tag {
+    font-family: "Lekton", monospace;
+    padding: 5px 10px;
+    border-radius: 15px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    font-weight: 100;
+    font-style: normal;
+    color: white;
+    background-color: transparent;
+    background-color: rgba(84, 83, 83, 0.3);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(105, 108, 113, 0.608);
+}
+
+.tag.feedback {
+    background-color: #006EFE;
+    color: white;
+}
+
+button#createPost {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 15px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+a {
+    color: #006EFE;
+    text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+    body {
+        text-align: center;
+        padding: 50px;
+    }
+    .content {
+        display: none;
+    }
+    body::before {
+        content: "This website is optimized for mobile devices. Please open it on a mobile phone or tablet.";
+        display: block;
+        font-size: 1.5em;
+        margin-bottom: 20px;
+    }
+}
