@@ -32,6 +32,60 @@ header {
     margin-left: 10px;
 }
 
+.menu-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 100;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.menu-content a {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.menu-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.menu-content {
+    position: relative;
+    width: 80%;
+    max-width: 400px;
+    padding: 20px;
+    color: white;
+}
+
+.menu-content a {
+    display: block;
+    padding: 10px 0;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
 .content {
     padding: 20px;
     text-align: left;
@@ -88,6 +142,30 @@ button#createPost {
 a {
     color: #006EFE;
     text-decoration: underline;
+}
+
+.ai-container {
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    text-align: left;
+}
+
+.ai-container h3 {
+    margin-top: 0;
+}
+
+.ai-container .tag {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+h3 {
+    font-weight: 300;
+    font-style: normal;
 }
 
 @media (min-width: 768px) {
